@@ -1,6 +1,4 @@
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicOptionPaneUI;
-import java.awt.*;
 import java.awt.event.*;
 
 public class MainForm extends JFrame {
@@ -78,7 +76,7 @@ public class MainForm extends JFrame {
         this.pack();
         add(rootPanel);
         setTitle("PassBox Yo");
-        setSize(370, 400);
+        setSize(440, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 }
