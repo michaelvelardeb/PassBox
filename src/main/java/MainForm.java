@@ -1,6 +1,4 @@
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicOptionPaneUI;
-import java.awt.*;
 import java.awt.event.*;
 
 public class MainForm extends JFrame {
@@ -63,6 +61,14 @@ public class MainForm extends JFrame {
 
         addNewButton.setSize(40, 40);
         addNewButton = new JButton("Add New Password");
+        addNewButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                addPasswordForm passwordForm = new addPasswordForm();
+                passwordForm.setVisible(true);
+
+            }
+        });
 
         rootPanel.add(searchBox);
         searchButton = new JButton("Search");
