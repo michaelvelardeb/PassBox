@@ -64,7 +64,8 @@ public class MainForm extends JFrame {
         addNewButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                addPasswordForm passwordForm = new addPasswordForm();
+//                addPasswordForm passwordForm = new addPasswordForm();
+                textForm passwordForm = new textForm();
                 passwordForm.setVisible(true);
 
             }

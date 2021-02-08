@@ -24,14 +24,14 @@ public class addPasswordForm extends JFrame{
         securityAnswerInput = new JTextField("Enter Answer to Security question", 30);
         HyperLinkInput = new JTextField("Enter HyperLink", 30);
         CategoryInput = new JTextField("Enter Category", 30);
-        NotesTextArea = new JTextArea("Ente additional Notes here", 30, 30);
+        NotesTextArea = new JTextArea("Ente additional Notes here", 10, 35);
         saveButton = new JButton("Save");
-        nameLabel = new JLabel("Name");
-        passwordLabel = new JLabel("Password");
-        securityLabel = new JLabel("Security Answer");
-        hyperLinkLabel = new JLabel("HyperLink");
-        CategoryLabel = new JLabel("Category");
-        NotesLabel = new JLabel("Notes");
+        nameLabel = new JLabel("Name", 10);
+        passwordLabel = new JLabel("Password", 10);
+        securityLabel = new JLabel("Security Answer", 10);
+        hyperLinkLabel = new JLabel("HyperLink", 10);
+        CategoryLabel = new JLabel("Category", 10);
+        NotesLabel = new JLabel("Notes", 10);
 
         panel1.add(nameInput);
         panel1.add(nameLabel);
@@ -45,12 +45,15 @@ public class addPasswordForm extends JFrame{
         panel1.add(CategoryLabel);
         panel1.add(NotesTextArea);
         panel1.add(NotesLabel);
+        saveButton.setAlignmentX(1000);
         panel1.add(saveButton);
 
-        this.pack();
+
         this.add(panel1);
+
+//        this.pack();
         setTitle("Add Password");
-        setSize(200, 400);
+        setSize(500, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 }

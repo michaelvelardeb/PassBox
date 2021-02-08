@@ -7,8 +7,6 @@ public class Password {
         this.title = title;
     }
 
-    String title;
-
     public String getPassword() {
         return password;
     }
@@ -56,7 +54,7 @@ public class Password {
     public void setCategory(String category) {
         this.category = category;
     }
-
+    String title;
     String password;
     String securityQuestion;
     String securityAnswer;
