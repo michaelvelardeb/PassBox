@@ -55,6 +55,7 @@ public class Password {
         this.category = category;
     }
     String title;
+    String userName;
     String password;
     String securityQuestion;
     String securityAnswer;
@@ -62,12 +63,21 @@ public class Password {
     String hyperLink;
     String category;
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     public Password() {
-        String title = "";
-        String password = "";
-        String securityAnswer = "";
-        String securityHint = "";
-        String hyperLink = "";
-        String category = "";
+       this.title = "";
+        this.userName = "";
+        this.password = "";
+        this.securityAnswer = "";
+        this.securityHint = "";
+        this.hyperLink = "";
+        this.category = "";
     }
 }

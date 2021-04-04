@@ -18,6 +18,8 @@ public class textForm extends JFrame {
     private JTextArea notesArea;
     private JLabel notesLabel;
     private JButton saveButton;
+    private JTextField userName;
+    private JLabel userLabel;
 
     public textForm() {
 
@@ -30,6 +32,7 @@ public class textForm extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 Password passwordElement = new Password();
                 passwordElement.setTitle(nameTextField.getText());
+                passwordElement.setUserName(userName.getText());
                 passwordElement.setPassword(passwordField.getText());
                 passwordElement.setCategory(categoryField.getText());
                 passwordElement.setSecurityAnswer(securityAnswerField.getText());
